@@ -30,7 +30,7 @@ public class MyStepdefs {
 
     @And("^I press 'Get coefficient'$")
     public void iPressGetCoefficient() throws Throwable {
-        this.result = weight.GetValue(operand1);
+        this.result = weight.getCoefficient(operand1);
     }
 
     @Then("^The result should be (\\d+)$")

@@ -19,7 +19,7 @@ public class ConWeight {
      * @param index наименование единицы измерения, тип int
      * @return коэффициент конвертирования
      */
-    public static double getValues(int index) {
+    public static double getCoefficient(int index) {
         return 0.001; 
     }
 }
