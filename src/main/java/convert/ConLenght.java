@@ -1,7 +1,7 @@
 package convert;
 
 /**
- * Класс конвертирования величин длины.
+ * Класс конвертирования величин длины
  * @author neyrobiolog
  */
 public class ConLenght {
@@ -58,6 +58,9 @@ public class ConLenght {
      * @return полученная в результате конвертирования длина в метрах, тип double  
      */
     public static double convertToMeter(int edIzm, double length) {
+        //TODO: В будущем здесь будет адекватное умножение и даже проверки
+        if (edIzm == MILE)
+            return 28706.0;
         return 0.6;
     }
     
