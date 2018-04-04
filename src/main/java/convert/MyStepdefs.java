@@ -119,11 +119,11 @@ public class MyStepdefs {
     }
     
     
+    private ConLenght lenght;
     
     @Given("^I have my software lenght converter$")
     public void iHaveMySoftwareLenghtConverter() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        this.lenght = new ConLenght();
     }
 
     @When("^I have entered CANTIMETER as first operand$")
