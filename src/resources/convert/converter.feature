@@ -55,3 +55,10 @@ Feature: Converting
     When I have entered DOLY as first operand
     And I press 'Get coefficient'
     Then The result should be 0.00004
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered GRAMM as first operand
+    And I have entered 2 as second operand
+    And I press 'Convert to kilogramm'
+    Then The result should be 0.002
