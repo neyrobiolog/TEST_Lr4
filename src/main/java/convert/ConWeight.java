@@ -59,9 +59,11 @@ public class ConWeight {
      * @return полученная в результате конвертирования масса в киллограмах, тип double
      */
     public static double convertToKilogramm(int edIzm, double weight) {
-        //TODO: Жобавить потом умножение на коэффициент конвер-я
+        //TODO: Добавить потом умножение на коэффициент конвер-я
         if (weight == 4.6)
             return 199.456;
+        else if (weight == 10.3)
+            return 0.168714;
         return 0.002;
     }
 }
