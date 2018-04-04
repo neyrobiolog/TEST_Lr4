@@ -186,3 +186,10 @@ Feature: Converting
     And I press 'Converting lenght'
     Then The result should be 0.01593
 
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered FUT as first operand
+    And I have entered 57.1 as second operand
+    And I have entered KILOMETER as third operand
+    And I press 'Converting lenght'
+    Then The result should be 0.01713
