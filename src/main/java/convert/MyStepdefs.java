@@ -17,6 +17,12 @@ public class MyStepdefs {
     private int GRAMM = weight.GRAMM;
     private int KVITAL = weight.KVITAL;
     private int LOT = weight.LOT;
+    private int KILOGRAMM = weight.KILOGRAMM;
+    private int TONNA = weight.TONNA;
+    private int KVARTER = weight.KVARTER;
+    private int STOUN = weight.STOUN;
+    private int ZOLOTNIK = weight.ZOLOTNIK;
+    private int DOLY = weight.DOLY;
     private int operand1;
     private double result;
 
@@ -38,6 +44,36 @@ public class MyStepdefs {
     @When("^I have entered LOT as first operand$")
     public void iHaveEnteredAsFirstOperandLOT() throws Throwable {
         this.operand1 = LOT;
+    }
+    
+    @When("^I have entered KILOGRAMM as first operand$")
+    public void iHaveEnteredAsFirstOperandKILOGRAMM() throws Throwable {
+        this.operand1 = KILOGRAMM;
+    }
+
+    @When("^I have entered TONNA as first operand$")
+    public void iHaveEnteredAsFirstOperandTONNA() throws Throwable {
+        this.operand1 = TONNA;
+    }
+    
+    @When("^I have entered KVARTER as first operand$")
+    public void iHaveEnteredAsFirstOperandKVARTER() throws Throwable {
+        this.operand1 = KVARTER;
+    }
+
+    @When("^I have entered STOUN as first operand$")
+    public void iHaveEnteredAsFirstOperandSTOUN() throws Throwable {
+        this.operand1 = STOUN;
+    }
+    
+    @When("^I have entered ZOLOTNIK as first operand$")
+    public void iHaveEnteredAsFirstOperandZOLOTNIK() throws Throwable {
+        this.operand1 = ZOLOTNIK;
+    }
+
+    @When("^I have entered DOLY as first operand$")
+    public void iHaveEnteredAsFirstOperandDOLY() throws Throwable {
+        this.operand1 = DOLY;
     }
     
     @And("^I press 'Get coefficient'$")
