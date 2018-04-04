@@ -25,31 +25,30 @@ public class ConWeight {
     public static final int LOT = 6;        //Лот
     public static final int ZOLOTNIK = 7;   //Золотник
     public static final int DOLY = 8;       //Доля
+        
+    //Массив коэффициентов конвертирования
+    private static double[] coefficients = {
+        0.001, //Грамм
+        1, //Киллограм
+        1000, //Тонна
+        43.36, //Квитал
+        11.34, //Квартер
+        6.35, //Стоун
+        0.01638, //Лот
+        0.00426, //Золотник
+        0.00004 //Доля
+    };
     
     /**
      * Получить коэффициент конвертирования единицы измерения из массива по его индексу
-     * @param index наименование единицы измерения, тип int
-     * @return коэффициент конвертирования
+     * @param index индекс в массиве (или наименование единицы измерения), тип int
+     * @return коэффициент конвертирования, записанный по данному индексу, тип double
+     * @throws return -1 в случае, если передается индекс, выходящий за пределы массива коэффициентов
      */
     public static double getCoefficient(int index) {
-        //TODO: сделать адекватно, а не с кучей if-ов
-        //TODO: да сделайте вы уже switch
-        if (index == KVITAL) 
-                return 43.36;
-        else if (index == LOT) 
-                return 0.01638;
-        else if (index == KILOGRAMM) 
-                return 1;
-        else if (index == TONNA) 
-                return 1000;
-        else if (index == KVARTER) 
-                return 6.35;
-        else if (index == STOUN) 
-                return 0.01638;
-        else if (index == ZOLOTNIK) 
-                return 0.00426;
-        else if (index == DOLY) 
-                return 0.00004;
-        return 0.001; 
+       if (index < 0 || index > coefficients.length)
+           return -1;
+       else
+           return coefficients[index]; 
     }
 }
