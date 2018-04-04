@@ -120,6 +120,7 @@ public class MyStepdefs {
     
     
     private ConLenght lenght;
+    private int CANTIMETER = weight.CANTIMETER;
     
     @Given("^I have my software lenght converter$")
     public void iHaveMySoftwareLenghtConverter() throws Throwable {
@@ -128,14 +129,12 @@ public class MyStepdefs {
 
     @When("^I have entered CANTIMETER as first operand$")
     public void iHaveEnteredAsFirstOperandCANTIMETER() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        this.operand1 = CANTIMETER;
     }
     
     @And("^I press 'Get coefficient lenght'$")
     public void iPressGetCoefficientLenght() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        this.result = lenght.getCoefficient(operand1);
     }
     
 }
