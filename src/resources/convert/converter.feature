@@ -120,3 +120,39 @@ Feature: Converting
     When I have entered VERSTA as first operand
     And I press 'Get coefficient lenght'
     Then The result should be 1066.8
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered METER as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 1
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered KILOMETER as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 1000
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered FUT as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 0.3
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered YARD as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 0.9144
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered SAZHEN as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 2.133
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered ARSHIN as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 0.711
