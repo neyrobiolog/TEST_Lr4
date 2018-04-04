@@ -19,3 +19,39 @@ Feature: Converting
     When I have entered LOT as first operand
     And I press 'Get coefficient'
     Then The result should be 0.01638
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered KILOGRAMM as first operand
+    And I press 'Get coefficient'
+    Then The result should be 1
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered TONNA as first operand
+    And I press 'Get coefficient'
+    Then The result should be 1000
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered KVARTER as first operand
+    And I press 'Get coefficient'
+    Then The result should be 11.34
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered STOUN as first operand
+    And I press 'Get coefficient'
+    Then The result should be 6.35
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered ZOLOTNIK as first operand
+    And I press 'Get coefficient'
+    Then The result should be 0.00426
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered DOLY as first operand
+    And I press 'Get coefficient'
+    Then The result should be 0.00004
