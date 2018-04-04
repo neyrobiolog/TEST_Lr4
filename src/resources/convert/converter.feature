@@ -108,3 +108,9 @@ Feature: Converting
     When I have entered CANTIMETER as first operand
     And I press 'Get coefficient lenght'
     Then The result should be 0.01
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered MILE as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 1852
