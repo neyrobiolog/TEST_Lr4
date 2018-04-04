@@ -15,6 +15,7 @@ public class MyStepdefs {
     
     private ConWeight weight;
     private int GRAMM = weight.GRAMM;
+    private int KVITAL = weight.KVITAL;
     private int operand1;
     private double result;
 
@@ -26,6 +27,11 @@ public class MyStepdefs {
     @When("^I have entered GRAMM as first operand$")
     public void iHaveEnteredAsFirstOperand() throws Throwable {
         this.operand1 = GRAMM;
+    }
+
+    @When("^I have entered KVITAL as first operand$")
+    public void iHaveEnteredAsFirstOperandKVITAL() throws Throwable {
+        this.operand1 = KVITAL;
     }
 
     @And("^I press 'Get coefficient'$")
