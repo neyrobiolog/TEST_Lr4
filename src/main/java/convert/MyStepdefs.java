@@ -120,7 +120,7 @@ public class MyStepdefs {
     
     
     private ConLenght lenght;
-    private int CANTIMETER = weight.CANTIMETER;
+    private int CANTIMETER = lenght.CANTIMETER;
     
     @Given("^I have my software lenght converter$")
     public void iHaveMySoftwareLenghtConverter() throws Throwable {
