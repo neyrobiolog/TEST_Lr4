@@ -180,6 +180,11 @@ public class MyStepdefs {
         this.operand1 = ARSHIN;
     }
     
+    @When("^I have entered SAZHEN as third operand$")
+    public void iHaveEnteredAsThirdOperandSAZHEN() throws Throwable {
+        this.operand3 = SAZHEN;
+    }
+
     @And("^I press 'Get coefficient lenght'$")
     public void iPressGetCoefficientLenght() throws Throwable {
         this.result = lenght.getCoefficient(operand1);
@@ -188,6 +193,11 @@ public class MyStepdefs {
     @And("^I press 'Convert to meter'$")
     public void iPressConvertToMeter() throws Throwable {
         this.result = lenght.convertToMeter(operand1, operand2);
+    }
+
+    @And("^I press 'Converting lenght'$")
+    public void iPressConvertingLenght() throws Throwable {
+        this.result = lenght.converting(operand1, operand2, operand3);
     }
 
 }
