@@ -190,6 +190,11 @@ public class MyStepdefs {
         this.operand3 = KILOMETER;
     }
 
+    @When("^I have entered YARD as third operand$")
+    public void iHaveEnteredAsThirdOperandYARD() throws Throwable {
+        this.operand3 = YARD;
+    }
+
     @And("^I press 'Get coefficient lenght'$")
     public void iPressGetCoefficientLenght() throws Throwable {
         this.result = lenght.getCoefficient(operand1);
