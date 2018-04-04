@@ -122,6 +122,7 @@ public class MyStepdefs {
     private ConLenght lenght;
     private int CANTIMETER = lenght.CANTIMETER;
     private int MILE = lenght.MILE;
+    private int VERSTA = lenght.VERSTA;
     
     @Given("^I have my software lenght converter$")
     public void iHaveMySoftwareLenghtConverter() throws Throwable {
@@ -136,6 +137,11 @@ public class MyStepdefs {
     @When("^I have entered MILE as first operand$")
     public void iHaveEnteredAsFirstOperandMILE() throws Throwable {
         this.operand1 = MILE;
+    }
+    
+    @When("^I have entered VERSTA as first operand$")
+    public void iHaveEnteredAsFirstOperandVERSTA() throws Throwable {
+        this.operand1 = VERSTA;
     }
     
     @And("^I press 'Get coefficient lenght'$")
