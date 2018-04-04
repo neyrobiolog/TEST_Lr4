@@ -92,3 +92,11 @@ Feature: Converting
     And I have entered TONNA as third operand
     And I press 'Converting'
     Then The result should be 0.144018
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered DOLY as first operand
+    And I have entered 20 as second operand
+    And I have entered STOUN as third operand
+    And I press 'Converting'
+    Then The result should be 1.2598
