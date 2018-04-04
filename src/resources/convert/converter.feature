@@ -156,3 +156,11 @@ Feature: Converting
     When I have entered ARSHIN as first operand
     And I press 'Get coefficient lenght'
     Then The result should be 0.711
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered CANTIMETER as first operand
+    And I have entered 60 as second operand
+    And I press 'Convert to meter'
+    Then The result should be 0.6
+
