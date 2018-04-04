@@ -177,3 +177,12 @@ Feature: Converting
     And I have entered 75.5 as second operand
     And I press 'Convert to meter'
     Then The result should be 80543.4
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered METER as first operand
+    And I have entered 17 as second operand
+    And I have entered SAZHEN as third operand
+    And I press 'Converting lenght'
+    Then The result should be 0.01593
+
