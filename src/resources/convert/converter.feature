@@ -164,3 +164,9 @@ Feature: Converting
     And I press 'Convert to meter'
     Then The result should be 0.6
 
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered MILE as first operand
+    And I have entered 15.5 as second operand
+    And I press 'Convert to meter'
+    Then The result should be 28706.0
