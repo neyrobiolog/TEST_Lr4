@@ -77,6 +77,8 @@ public class ConLenght {
         //TODO: Заменить в дальнейшем на расчет по формуле
         if (edIzmFrom == FUT)
             return 0.01713;
+        else if (edIzmFrom == ARSHIN)
+            return 60.5718;
         return 0.01593;
     }
 }
