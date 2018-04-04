@@ -170,3 +170,10 @@ Feature: Converting
     And I have entered 15.5 as second operand
     And I press 'Convert to meter'
     Then The result should be 28706.0
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered VERSTA as first operand
+    And I have entered 75.5 as second operand
+    And I press 'Convert to meter'
+    Then The result should be 80543.4
