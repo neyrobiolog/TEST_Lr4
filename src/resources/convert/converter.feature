@@ -80,7 +80,7 @@ Feature: Converting
   Scenario:
     Given I have my software weight converter
     When I have entered KILOGRAMM as first operand
-    And I have entered ZOLOTNIK as second operand
-    And I have entered 7 as third operand
+    And I have entered 7 as second operand
+    And I have entered ZOLOTNIK as third operand
     And I press 'Converting'
     Then The result should be 1642.192

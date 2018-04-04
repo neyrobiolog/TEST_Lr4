@@ -25,6 +25,7 @@ public class MyStepdefs {
     private int DOLY = weight.DOLY;
     private int operand1;
     private double operand2;
+    private int operand3;
     private double result;
 
     @Given("^I have my software weight converter$")
@@ -82,6 +83,11 @@ public class MyStepdefs {
         this.operand2 = number;
     }
 
+    @When("^I have entered ZOLOTNIK as third operand$")
+    public void iHaveEnteredAsThirdOperandZOLOTNIK() throws Throwable {
+        this.operand3 = ZOLOTNIK;
+    }
+
     @And("^I press 'Get coefficient'$")
     public void iPressGetCoefficient() throws Throwable {
         this.result = weight.getCoefficient(operand1);
@@ -90,6 +96,11 @@ public class MyStepdefs {
     @And("^I press 'Convert to kilogramm'$")
     public void iPressConvertToKilogramm() throws Throwable {
         this.result = weight.convertToKilogramm(operand1, operand2);
+    }
+
+    @And("^I press 'Converting'$")
+    public void iPressConverting() throws Throwable {
+        this.result = weight.converting(operand1, operand2, operand3);
     }
 
     @Then("^The result should be (\\d+)$")
