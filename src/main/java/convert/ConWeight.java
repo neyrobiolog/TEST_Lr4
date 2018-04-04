@@ -77,6 +77,8 @@ public class ConWeight {
     public static double converting(int edIzmFrom, double weight, int edIzmTo) {
         if (weight == 12.7)
             return 0.144018;
+        else if (weight == 20)
+            return 1.2598;
         return 1642.192;
     }
 }
