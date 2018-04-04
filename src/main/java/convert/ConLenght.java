@@ -13,12 +13,18 @@ public class ConLenght {
     //Система СИ
     public static final int CANTIMETER = 0; //Сантиметр
     
+    //Американская система
+    public static final int MILE = 3;       //Миля
+    
     /**
      * Получить коэффициент конвертирования единицы измерения по его индексу
      * @param index наименование единицы измерения, тип int
      * @return коэффициент конвертирования, тип double
      */
     public static double getCoefficient(int index) {
+       //TODO: В лучшее время здесь сделать нормальный возврат коэффициентов 
+       if (index == MILE)
+           return 1852;
        return 0.01; 
     }
     
