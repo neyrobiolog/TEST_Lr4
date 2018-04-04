@@ -117,4 +117,25 @@ public class MyStepdefs {
     public void theResultShouldBe(int expected) throws Throwable {
         Assert.assertEquals(expected, this.result, 1e-5);
     }
+    
+    
+    
+    @Given("^I have my software lenght converter$")
+    public void iHaveMySoftwareLenghtConverter() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^I have entered CANTIMETER as first operand$")
+    public void iHaveEnteredAsFirstOperandCANTIMETER() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+    
+    @And("^I press 'Get coefficient lenght'$")
+    public void iPressGetCoefficientLenght() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+    
 }
