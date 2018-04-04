@@ -193,3 +193,11 @@ Feature: Converting
     And I have entered KILOMETER as third operand
     And I press 'Converting lenght'
     Then The result should be 0.01713
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered ARSHIN as first operand
+    And I have entered 77.9 as second operand
+    And I have entered YARD as third operand
+    And I press 'Converting lenght'
+    Then The result should be 60.5718
