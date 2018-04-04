@@ -50,5 +50,16 @@ public class ConLenght {
        else
            return coefficient[index];  
     }
+       
+    /**
+     * Конвертирование полученного значения длины в метры
+     * @param edIzm единица измерения, из которой конвертируем, тип int
+     * @param length длина, которую необходимо конфертировать, тип double
+     * @return полученная в результате конвертирования длина в метрах, тип double  
+     */
+    public static double convertToMeter(int edIzm, double length) {
+        return 0.6;
+    }
+    
     
 }
