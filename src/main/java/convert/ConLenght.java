@@ -65,6 +65,16 @@ public class ConLenght {
         else
             return length * coefficient[edIzm];
     }
-    
-    
+        
+    /**
+     * Конвертирование длины из одной единицы измерения в другую
+     * @param length длина, которую необходимо конфертировать, тип double
+     * @param edIzmFrom единица измерения, из которой конвертируем, тип int
+     * @param systemTo единица измерения, в которую конвертируем, тип int
+     * @return полученная в результате конвертирования длины в нужной системе, тип double
+     */
+    public static double converting(int edIzmFrom, double length, int edIzmTo) {
+        //TODO: Заменить в дальнейшем на расчет по формуле
+        return 0.01593;
+    }
 }
