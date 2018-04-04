@@ -75,6 +75,8 @@ public class ConLenght {
      */
     public static double converting(int edIzmFrom, double length, int edIzmTo) {
         //TODO: Заменить в дальнейшем на расчет по формуле
+        if (edIzmFrom == FUT)
+            return 0.01713;
         return 0.01593;
     }
 }
