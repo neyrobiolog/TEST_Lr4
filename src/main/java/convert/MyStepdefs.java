@@ -123,6 +123,12 @@ public class MyStepdefs {
     private int CANTIMETER = lenght.CANTIMETER;
     private int MILE = lenght.MILE;
     private int VERSTA = lenght.VERSTA;
+    private int METER = lenght.METER;
+    private int KILOMETER = lenght.KILOMETER;
+    private int FUT = lenght.FUT;
+    private int YARD = lenght.YARD;
+    private int SAZHEN = lenght.SAZHEN;
+    private int ARSHIN = lenght.ARSHIN;
     
     @Given("^I have my software lenght converter$")
     public void iHaveMySoftwareLenghtConverter() throws Throwable {
@@ -142,6 +148,36 @@ public class MyStepdefs {
     @When("^I have entered VERSTA as first operand$")
     public void iHaveEnteredAsFirstOperandVERSTA() throws Throwable {
         this.operand1 = VERSTA;
+    }
+    
+    @When("^I have entered METER as first operand$")
+    public void iHaveEnteredAsFirstOperandMETER() throws Throwable {
+        this.operand1 = METER;
+    }
+    
+    @When("^I have entered KILOMETER as first operand$")
+    public void iHaveEnteredAsFirstOperandKILOMETER() throws Throwable {
+        this.operand1 = KILOMETER;
+    }
+    
+    @When("^I have entered FUT as first operand$")
+    public void iHaveEnteredAsFirstOperandFUT() throws Throwable {
+        this.operand1 = FUT;
+    }
+    
+    @When("^I have entered YARD as first operand$")
+    public void iHaveEnteredAsFirstOperandYARD() throws Throwable {
+        this.operand1 = YARD;
+    }
+    
+    @When("^I have entered SAZHEN as first operand$")
+    public void iHaveEnteredAsFirstOperandSAZHEN() throws Throwable {
+        this.operand1 = SAZHEN;
+    }
+    
+    @When("^I have entered ARSHIN as first operand$")
+    public void iHaveEnteredAsFirstOperandARSHIN() throws Throwable {
+        this.operand1 = ARSHIN;
     }
     
     @And("^I press 'Get coefficient lenght'$")
