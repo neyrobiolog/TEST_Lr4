@@ -16,6 +16,9 @@ public class ConLenght {
     //Американская система
     public static final int MILE = 3;       //Миля
     
+    //Старорусская система
+    public static final int VERSTA = 6;     //Верста
+    
     /**
      * Получить коэффициент конвертирования единицы измерения по его индексу
      * @param index наименование единицы измерения, тип int
@@ -25,6 +28,8 @@ public class ConLenght {
        //TODO: В лучшее время здесь сделать нормальный возврат коэффициентов 
        if (index == MILE)
            return 1852;
+       else if (index == VERSTA)
+           return 1066.8;
        return 0.01; 
     }
     
