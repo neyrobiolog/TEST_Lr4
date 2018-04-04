@@ -93,6 +93,11 @@ public class MyStepdefs {
         this.operand3 = TONNA;
     }
 
+    @When("^I have entered STOUN as third operand$")
+    public void iHaveEnteredAsThirdOperandSTOUN() throws Throwable {
+        this.operand3 = STOUN;
+    }
+
     @And("^I press 'Get coefficient'$")
     public void iPressGetCoefficient() throws Throwable {
         this.result = weight.getCoefficient(operand1);
