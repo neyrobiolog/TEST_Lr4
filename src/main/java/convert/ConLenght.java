@@ -25,30 +25,30 @@ public class ConLenght {
     public static final int SAZHEN = 7;     //Сажень
     public static final int ARSHIN = 8;     //Аршин
     
+    //Массив коэффициентов конвертирования
+    private static double[] coefficient = {
+        0.01,   //сантиметр
+        1,      //метр
+        1000,   //киллометр
+        1852,   //миля
+        0.3,    //фут
+        0.9144, //ярд
+        1066.8, //верста
+        2.133,  //сажень
+        0.711   //аршин
+    };
+    
     /**
-     * Получить коэффициент конвертирования единицы измерения по его индексу
-     * @param index наименование единицы измерения, тип int
-     * @return коэффициент конвертирования, тип double
+     * Получить коэффициент конвертирования единицы измерения из массива по его индексу
+     * @param index индекс в массиве (или наименование единицы измерения), тип int
+     * @return коэффициент конвертирования, записанный по данному индексу, тип double
+     * @throws return -1 в случае, если передается индекс, выходящий за пределы массива коэффициентов
      */
     public static double getCoefficient(int index) {
-       //TODO: В лучшее время здесь сделать нормальный возврат коэффициентов 
-       if (index == MILE)
-           return 1852;
-       else if (index == VERSTA)
-           return 1066.8;
-       else if (index == METER)
-           return 1;
-       else if (index == KILOMETER)
-           return 1000;
-       else if (index == FUT)
-           return 0.3;
-       else if (index == YARD)
-           return 0.9144;
-       else if (index == SAZHEN)
-           return 2.133;
-       else if (index == ARSHIN)
-           return 0.711;
-       return 0.01; 
+       if (index < 0 || index > coefficient.length)
+           return -1;
+       else
+           return coefficient[index];  
     }
     
 }
