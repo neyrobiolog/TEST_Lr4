@@ -185,4 +185,9 @@ public class MyStepdefs {
         this.result = lenght.getCoefficient(operand1);
     }
     
+    @And("^I press 'Convert to meter'$")
+    public void iPressConvertToMeter() throws Throwable {
+        this.result = lenght.convertToMeter(operand1, operand2);
+    }
+
 }
