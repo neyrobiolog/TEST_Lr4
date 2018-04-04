@@ -84,3 +84,11 @@ Feature: Converting
     And I have entered ZOLOTNIK as third operand
     And I press 'Converting'
     Then The result should be 1642.192
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered KVARTER as first operand
+    And I have entered 12.7 as second operand
+    And I have entered TONNA as third operand
+    And I press 'Converting'
+    Then The result should be 0.144018
