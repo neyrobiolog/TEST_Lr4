@@ -100,3 +100,11 @@ Feature: Converting
     And I have entered STOUN as third operand
     And I press 'Converting'
     Then The result should be 1.2598
+
+
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered CANTIMETER as first operand
+    And I press 'Get coefficient'
+    Then The result should be 0.01
