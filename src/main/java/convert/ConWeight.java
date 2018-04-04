@@ -68,17 +68,17 @@ public class ConWeight {
     }
         
     /**
-     * Конвертирование массы из одной единицы измерения в другую
+     * Конвертирование массы из одной единицы измерения в другую по формуле:
+     * полученная масса, переведенная в килограммы / коэффициент ед. измерения, в который переводим
      * @param weight масса, которую необходимо конфертировать, тип double
      * @param edIzmFrom единица измерения, из которой конвертируем, тип int
      * @param edIzmTo единица измерения, в которую конвертируем, тип int
      * @return полученная в результате конвертирования масса в нужной системе, тип double
+     * @throws return -1 в случае, если передаются непредусмотренные единицы измерения
      */
     public static double converting(int edIzmFrom, double weight, int edIzmTo) {
-        if (weight == 12.7)
-            return 0.144018;
-        else if (weight == 20)
-            return 1.2598;
-        return 1642.192;
+        if ((edIzmFrom < 0 || edIzmFrom > 9) || (edIzmTo < 0 || edIzmTo > 9))
+            return -1;
+        return convertToKilogramm(edIzmFrom, weight) / coefficients[edIzmTo];
     }
 }
