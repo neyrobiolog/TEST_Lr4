@@ -67,18 +67,18 @@ public class ConLenght {
     }
         
     /**
-     * Конвертирование длины из одной единицы измерения в другую
+     * Конвертирование длины из одной единицы измерения в другую по формуле:
+     * полученная длина, переведенная в метры / коэффициент ед. измерения, в которую переводим
      * @param length длина, которую необходимо конфертировать, тип double
      * @param edIzmFrom единица измерения, из которой конвертируем, тип int
-     * @param systemTo единица измерения, в которую конвертируем, тип int
+     * @param edIzmTo единица измерения, в которую конвертируем, тип int
      * @return полученная в результате конвертирования длины в нужной системе, тип double
+     * @throws return -1 в случае, если передается непредусмотренная единица измерения 
      */
     public static double converting(int edIzmFrom, double length, int edIzmTo) {
-        //TODO: Заменить в дальнейшем на расчет по формуле
-        if (edIzmFrom == FUT)
-            return 0.01713;
-        else if (edIzmFrom == ARSHIN)
-            return 60.5718;
-        return 0.01593;
+        if ((edIzmFrom < 0 || edIzmFrom > 9) || (edIzmTo < 0 || edIzmTo > 9))
+            return -1;
+        else
+            return convertToMeter(edIzmFrom, length) / coefficient[edIzmTo];
     }
 }
