@@ -61,6 +61,8 @@ public class ConLenght {
         //TODO: В будущем здесь будет адекватное умножение и даже проверки
         if (edIzm == MILE)
             return 28706.0;
+        else if (edIzm == VERSTA)
+            return 80543.4;
         return 0.6;
     }
     
