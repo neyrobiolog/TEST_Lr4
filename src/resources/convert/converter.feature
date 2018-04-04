@@ -114,3 +114,9 @@ Feature: Converting
     When I have entered MILE as first operand
     And I press 'Get coefficient lenght'
     Then The result should be 1852
+
+  Scenario:
+    Given I have my software lenght converter
+    When I have entered VERSTA as first operand
+    And I press 'Get coefficient lenght'
+    Then The result should be 1066.8
