@@ -69,3 +69,10 @@ Feature: Converting
     And I have entered 4.6 as second operand
     And I press 'Convert to kilogramm'
     Then The result should be 199.456
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered LOT as first operand
+    And I have entered 10.3 as second operand
+    And I press 'Convert to kilogramm'
+    Then The result should be 0.168714
