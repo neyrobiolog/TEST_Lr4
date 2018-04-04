@@ -76,3 +76,11 @@ Feature: Converting
     And I have entered 10.3 as second operand
     And I press 'Convert to kilogramm'
     Then The result should be 0.168714
+
+  Scenario:
+    Given I have my software weight converter
+    When I have entered KILOGRAMM as first operand
+    And I have entered ZOLOTNIK as second operand
+    And I have entered 7 as third operand
+    And I press 'Converting'
+    Then The result should be 1642.192
